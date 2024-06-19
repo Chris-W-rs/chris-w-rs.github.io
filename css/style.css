@@ -26,8 +26,18 @@ nav > ul > li::before{
     padding-left: 5rem;
     margin-left: 5rem;
 }
-ul#winners2024{
-    visibility: hidden;
+
+ul#winners2024 li div img{
+    border: .1rem solid white;
+    margin: 0;
+    border-radius: 4px;  /* Rounded border */
+    width: 100px; /* Set a small width */
+}
+ul#winners2024 > li > div p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+    margin-left: .3rem;
 }
 fieldset{
     margin-left: 10rem;

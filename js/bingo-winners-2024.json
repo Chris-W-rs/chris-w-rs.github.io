@@ -1,7 +1,39 @@
 {
     "winners2024": [
-        {"Name": "Chris Wolfe", "Drop": [
+        {"Name": "Chris Wolfe", "profileImage": "https://secure.runescape.com/m=avatar-rs/Chris+Wolfe/chat.png", "Drop": [
             "Orb of Volcanic Anima"
+            ]
+        },
+        {"Name": "Funky M F", "profileImage": "https://secure.runescape.com/m=avatar-rs/Funky+M+F/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "Megamage9142", "profileImage": "https://secure.runescape.com/m=avatar-rs/Megamage9142/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "Brewer", "profileImage": "https://secure.runescape.com/m=avatar-rs/Brewer/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "J A A K E Y", "profileImage": "https://secure.runescape.com/m=avatar-rs/J+A+A+K+E+Y/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "D R M A C K", "profileImage": "https://secure.runescape.com/m=avatar-rs/D+R+M+A+C+K/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "Rocter", "profileImage": "https://secure.runescape.com/m=avatar-rs/Rocter/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "Hotsause99", "profileImage": "https://secure.runescape.com/m=avatar-rs/hotsause99/chat.png", "Drop": [
+            ""
+            ]
+        },
+        {"Name": "Donaven", "profileImage": "https://secure.runescape.com/m=avatar-rs/Donaven/chat.png", "Drop": [
+            ""
             ]
         }
     ]
