@@ -1,0 +1,35 @@
+html,body{margin: 0; padding: 0}
+body{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+nav{
+    position:relative;
+    top: 0;
+    background-image: url('../img/hello_chickens.jpg');
+    background-repeat: no-repeat;
+    background-size: 50rem;
+    background-position: top;
+    padding: 2rem;
+}
+nav > ul a{
+    display: inline-block;
+    text-decoration: none;
+    color: silver;
+}
+nav > ul > li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+}
+nav > ul > li::before{
+    padding-left: 5rem;
+    margin-left: 5rem;
+}
+ul#winners2024{
+    visibility: hidden;
+}
+fieldset{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
