@@ -1,14 +1,19 @@
-html,body{margin: 0; padding: 0}
+html,body{margin: 0; padding: 0;}
 body{
     background-color: rgb(31, 31, 31);
     color: white;
+    height: fit-content;
+}
+main{
+    min-height: 80vh;
+    width: auto;
 }
 nav{
     position:relative;
     top: 0;
     background-image: url('../img/hello_chickens.jpg');
     background-repeat: no-repeat;
-    background-size: 50rem;
+    background-size: cover;
     background-position: top;
     padding: 2rem;
 }
@@ -16,6 +21,14 @@ nav > ul a{
     display: inline-block;
     text-decoration: none;
     color: silver;
+    font-weight: bolder;
+    background-color: black;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+nav > ul a:hover{
+    color: red;
+    background-color: yellow;
 }
 nav > ul > li{
     display: inline-block;
@@ -26,14 +39,19 @@ nav > ul > li::before{
     padding-left: 5rem;
     margin-left: 5rem;
 }
-
-ul#winners2024 li div img{
+div#winners2024{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+div#winners2024 div img{
     border: .1rem solid white;
     margin: 0;
-    border-radius: 4px;  /* Rounded border */
-    width: 100px; /* Set a small width */
+    border-radius: 4px;
+    width: 100px; 
 }
-ul#winners2024 > li > div p {
+div#winners2024 > div p {
     padding: 0;
     margin: 0;
     margin-bottom: 2rem;
@@ -42,4 +60,11 @@ ul#winners2024 > li > div p {
 fieldset{
     margin-left: 10rem;
     margin-right: 10rem;
+}
+footer{
+    border-top: .1rem solid white ;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
 }

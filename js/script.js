@@ -10,15 +10,16 @@ function bingoWinners2024() {
         let playerImage = document.createElement('img');
         let playerContainer = document.createElement('div');
         let playerText = document.createElement('p');
-
-        listItem.appendChild(playerContainer);
+        
+        playerContainer.style.marginRight = '2rem';
+        //listItem.appendChild(playerContainer);
         playerContainer.appendChild(playerImage).setAttribute("src", player.profileImage);
         playerContainer.appendChild(playerText).textContent = player.Name;
         
         // let dropList = listItem.appendChild(document.createElement("ul"));
         //     dropList.setAttribute("name", "Drops");
         //     dropList.appendChild(document.createElement("li")).textContent = player.Drop
-        bingo2024.appendChild(listItem);
+        bingo2024.appendChild(playerContainer);
         }
     })
     .catch(console.error);
