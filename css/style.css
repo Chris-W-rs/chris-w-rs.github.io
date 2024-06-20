@@ -12,6 +12,7 @@ main{
     width: 70vh;
     background-image: url('../img/background2.jpg');
     border-right: .1rem solid white;
+    border-top: .1rem solid white;
     border-left: .1rem solid white;
 }
 nav{

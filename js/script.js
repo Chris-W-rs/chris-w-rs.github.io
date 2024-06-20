@@ -29,3 +29,13 @@ checkbox2024.addEventListener('change', () => {
     if (checkbox2024.checked) bingoWinners2024();
     else bingo2024.innerHTML = "";
 })
+
+function callActivity(player) { 
+    let playerResponse = fetch("https://secure.runescape.com/m=adventurers-log/rssfeed?searchName="+player, {
+        method: "GET", mode: "cors", headers: {'Content-Type': 'text/xml', 'Access-Control-Allow-Origin':'*'}
+    });
+    playerResponse.then(response => response.text())
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(data => console.log(data))
+}
+callActivity('rocter');
