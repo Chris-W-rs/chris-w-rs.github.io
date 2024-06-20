@@ -2,15 +2,22 @@ html,body{margin: 0; padding: 0;}
 body{
     background-color: rgb(31, 31, 31);
     color: white;
-    height: fit-content;
+    height: auto;
+    width: auto;
 }
 main{
     min-height: 80vh;
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vh;
+    background-image: url('../img/background2.jpg');
+    border-right: .1rem solid white;
+    border-left: .1rem solid white;
 }
 nav{
     position:relative;
     top: 0;
+    text-align: center;
     background-image: url('../img/hello_chickens.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,7 +69,10 @@ fieldset{
     margin-right: 10rem;
 }
 footer{
+    background-image: url('../img/background-content.jpg');
+    background-size: contain;
     border-top: .1rem solid white ;
+    height: 7rem;
     width: 100%;
     position: relative;
     bottom: 0;
