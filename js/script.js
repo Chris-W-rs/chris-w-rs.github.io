@@ -32,7 +32,11 @@ checkbox2024.addEventListener('change', () => {
 
 function callActivity(player) { 
     let playerResponse = fetch("https://secure.runescape.com/m=adventurers-log/rssfeed?searchName="+player, {
-        method: "GET", mode: "cors", headers: {'Content-Type': 'text/xml', 'Access-Control-Allow-Origin':'*'}
+        headers: {
+        'Access-Control-Allow-Origin': "*",
+        'Access-Control-Allow-Headers':'Origin, X-PINGOTHER, Content-Type, Accept, Authorization',
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+    }
     });
     playerResponse.then(response => response.text())
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
