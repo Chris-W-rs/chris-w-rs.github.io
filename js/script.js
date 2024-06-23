@@ -30,16 +30,26 @@ checkbox2024.addEventListener('change', () => {
     else bingo2024.innerHTML = "";
 })
 
-function callActivity(player) { 
-    let playerResponse = fetch("https://secure.runescape.com/m=adventurers-log/rssfeed?searchName="+player, {
-        headers: {
-        'Access-Control-Allow-Origin': "*",
-        'Access-Control-Allow-Headers':'Origin, X-PINGOTHER, Content-Type, Accept, Authorization',
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
-    }
-    });
-    playerResponse.then(response => response.text())
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-    .then(data => console.log(data))
+// async function callActivity(player) { 
+//     let playerResponse = fetch("https://secure.runescape.com/m=adventurers-log/rssfeed?searchName="+player, {
+//         headers: {
+//         'Access-Control-Allow-Origin': "*",
+//         'Access-Control-Allow-Headers':'Origin, X-PINGOTHER, Content-Type, Accept, Authorization',
+//         'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+//     }
+//     });
+//     let playerData = await response.text();
+//     console.log(playerData)
+//     playerResponse.then(response => response.text())
+//     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+//     .then(data => console.log(data))
+// }
+// callActivity('rocter');
+
+async function wildernessEvent() {
+    const response = await fetch("https://runescape.wiki/w/Wilderness_Flash_Events");
+    let wildyEvent = await response.text();
+    console.log(wildyEvent);
 }
-callActivity('rocter');
+wildernessEvent();
+  
