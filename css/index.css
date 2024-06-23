@@ -30,22 +30,34 @@
     border-bottom: .1rem solid white;
     margin-bottom: auto;
 }
-div.leftColumn > h3{
+div.leftColumn > h2{
     text-align: center;
     margin: auto;
     margin-left: .5rem;
     margin-right: .5rem;
     border: .1rem solid white;
     border-radius: .5rem;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     color: black;
 }
-div.leftColumn ul a{
+div.leftColumn a{
     text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    position: relative;
+    top: .5rem;
     color: yellow;  
     background-color: black;
-    padding: .1rem;
     border: .2rem solid black;
+    border-radius: .5rem;
+}
+div.leftColumn a:hover{
+    text-decoration: none;
+    position: relative;
+    top: .5rem;
+    color: black;  
+    background-color: yellow;
+    border: .2rem solid yellow;
     border-radius: .5rem;
 }
 .introColumn{
