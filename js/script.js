@@ -8,6 +8,7 @@ function bingoWinners2024() {
         for (const player of data.winners2024) {
         const listItem = document.createElement("li");
         let playerImage = document.createElement('img');
+        playerImage.classList.add('slide-top')
         let playerContainer = document.createElement('div');
         let playerText = document.createElement('p');
         
